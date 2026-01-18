@@ -10,7 +10,7 @@
 
 ## ⚡ Інструкція до запуску
 
-1. У бравзері відкрийте **[open.spotify.com](https://open.spotify.com/)**
+1. У бравзері відкрийте **<a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">open.spotify.com</a>**
 2. Відкрийте на ній **Інструменти розробника (DevTools)**
     - у більшості бравзерів можна відкрити сполученням клавіш `F12`, або `Ctrl + Shift + I` , або ж `⌘ + ⌥ + I`
 3. У меню оберіть вкладку **Консоль (Console)** 
