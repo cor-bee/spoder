@@ -1,8 +1,8 @@
-# ✂️ Spoder -> Spotify Derussificator <img align="right" height="96px" src="./spoder.png" alt="Spoder" />
+# ✂️ Spoder -> Spotify Derussificator <img align="right" height="160px" src="./spoder.png" alt="Spoder" />
 
 **Дерусифікатор Spotify.** Скрипт, що блокує усіх росіян на Spotify раз і назавжди.
 
-<hr>
+---
 
 > ⚠️ **Увага!**
 >
@@ -10,13 +10,13 @@
 
 ## ⚡ Інструкція до запуску
 
-1. У бравзері відкрийте **<a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">open.spotify.com</a>**
+1. У бравзері відкрийте **[open.spotify.com](https://open.spotify.com/)**
 2. Відкрийте на ній **Інструменти розробника (DevTools)**
     - у більшості бравзерів можна відкрити сполученням клавіш `F12`, або `Ctrl + Shift + I` , або ж `⌘ + ⌥ + I`
 3. У меню оберіть вкладку **Консоль (Console)** 
 4. Вставте наступний рядок:
 ```
-(()=>{const s=document.createElement('script');s.src='https://raw.githubusercontent.com/cor-bee/spoder/refs/heads/main/spoder.js';s.onload=()=>console.log('⚡ Spoder завантажено!');s.onerror=()=>console.error('🚨 Spoder: помилка завантаження');document.head.appendChild(s);})();
+(async()=>{console.info('⏳ Spoder: завантажую та виконую з GitHub…');const u='https://raw.githubusercontent.com/cor-bee/spoder/refs/heads/main/spoder.js';try{const r=await fetch(u,{cache:'no-cache'});eval(await r.text());console.info('⚡ Spoder завантажено!')}catch(e){console.error('🚨 Spoder: помилка завантаження',e);}})();
 ```
 5. Натисніть **Enter**
 
